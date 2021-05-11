@@ -4,10 +4,10 @@ var MyClass = /** @class */ (function () {
         this.name = sname;
     }
     //method
-    MyClass.prototype.f1 = function (age) {
+    MyClass.prototype.f1 = function () {
         var info = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            info[_i - 1] = arguments[_i];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            info[_i] = arguments[_i];
         }
         console.log(arguments);
     };

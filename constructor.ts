@@ -8,7 +8,7 @@ this.name=sname
     }
 
     //method
-    f1(age?:number,...info){
+    f1(...info){
         console.log(arguments)
     }
 }
