@@ -4,15 +4,15 @@ var MyClass = /** @class */ (function () {
         this.name = sname;
     }
     //method
-    MyClass.prototype.f1 = function () {
-        var name = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            name[_i] = arguments[_i];
+    MyClass.prototype.f1 = function (age) {
+        var info = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            info[_i - 1] = arguments[_i];
         }
-        console.log(name);
+        console.log(arguments);
     };
     return MyClass;
 }());
 //class instance
-var obj1 = new MyClass("sp", "dd");
-obj1.f1("dc");
+var obj1 = new MyClass("sp");
+obj1.f1("shubham,22,k@gmail.com");
